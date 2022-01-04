@@ -9,7 +9,11 @@
 
 body {
     font-family: 'Space Grotesk', 'sans-serif';
-    background-color: #003554
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    background-color: #003554;
+    ;
 }
 .contenedor {
     max-width: 1500px ;
@@ -101,7 +105,8 @@ HERO
 */
 
 .hero {
-    height: 90vh;
+    height: 600px;
+    margin-bottom: 2rem;
 }
 
 .hero .contenedor {
@@ -192,19 +197,24 @@ ABOUT ME
 
 
 */
+.about-me {
+    height: auto;
 
+}
 
 .about-me .contenedor{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5rem;
 }
 
 .info-container {
     display: flex;
     justify-content: space-around;
     margin: 1rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -256,8 +266,20 @@ p strong {
 }
 
 
+.tech-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 2.5rem;
+    
+}
 
-
+.tech-container img {
+    width: 150px;
+    margin: 0 8px;
+}
 
 
 
