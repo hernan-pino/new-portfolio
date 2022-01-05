@@ -323,7 +323,86 @@ CONTACT
 
 .call2act p{
     text-align: left;
+    margin-bottom: 1rem;
 }
+
+/* copy email */
+
+.email-copy {
+    width: 250px;
+    margin: 0 auto;
+
+}
+
+.email-copy .copy{
+    position: relative;
+    padding: 5px;
+    background: transparent;
+    border:  2px solid #97D8C4;
+    border-radius: 20px;
+    display: flex;
+}
+
+.email-copy .copy input.text {
+    /* padding: 10px; */
+    font-size: 16px;
+    color: #CBF3F0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.copy button {
+    padding: 10px;
+    background: #CBF3F0;
+    color: #003554;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copy button:active{
+    opacity: .8;
+}
+
+.copy button::before {
+    content: 'Copiado';
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    background: #97D8C4;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15;
+    display: none;
+}
+
+.copy button::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #97D8C4;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.copy.active button::before,
+.copy.active button::after{
+    display: block;
+}
+
+@media (max-width: 500px){
+   
+    
+}
+
+/* form */
+
 .form {
     display: flex;
     flex-direction: column;
@@ -384,6 +463,8 @@ CONTACT
         width: 80%;
         
     }
+
+    
 }
 
 
@@ -440,7 +521,7 @@ LINKS PROFILES
     }
     .rrss li {
         
-        font-size: 1.1rem;
+        font-size: 2rem;
         
     }
 }
@@ -496,4 +577,20 @@ SCROLL UP
 
 .show-scroll {
     transform: translateY(0);
+}
+
+@media (max-width: 560px){
+  
+    .scroll-up {
+        
+        width: 20px;
+        height: 20px;
+       
+    }
+    
+    .scroll-up a {
+        font-size: .8rem;
+        
+    }
+
 }

@@ -1,3 +1,22 @@
+let copy = document.querySelector('.copy')
+
+copy.querySelector('button').addEventListener('click',() => {
+    let input = copy.querySelector('input.text')
+    input.select()
+    document.execCommand('copy')
+
+    copy.classList.add('active')
+
+    window.getSelection().removeAllRanges()
+
+    setTimeout(() => {
+        copy.classList.remove('active')
+    }, 1500)
+})
+
+
+
+
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     console.log('funciona')
