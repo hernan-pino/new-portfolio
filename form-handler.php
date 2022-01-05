@@ -14,7 +14,7 @@
                     "Email : $visitor_email.\n ".
                     "Mensaje: $message.\n ";
 
-    $to = 'hernan.pino76@gmail.com';
+    $to = 'hernan.pino7@gmail.com';
 
     $headers = "De : $email_from \r\n "."Reply-to: $visitor_email \r\n";
 
