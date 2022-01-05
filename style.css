@@ -388,9 +388,64 @@ CONTACT
 
 
 
+/* 
 
+LINKS PROFILES
 
+*/
 
+.rrss {
+    position: fixed;
+    width: 50px;
+    bottom: 10% ;
+    left: 3%;
+    text-align: center;
+}
+
+.rrss li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+
+.rrss li i{
+    color: #CBF3F0;
+}
+.rrss li i:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 700px){
+    .rrss {
+        
+        left: 1.1%;
+        
+    }
+    .rrss li {
+        
+        font-size: 1.1rem;
+        
+    }
+}
+
+@media (max-width: 560px){
+    .rrss {
+        position: static;
+        margin: 0 auto;
+        
+    }
+
+    .rrss ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   .rrss li{
+        margin: 0 1rem;
+        margin-bottom: 1rem;
+   }
+
+}
 
 
 
