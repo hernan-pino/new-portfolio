@@ -415,9 +415,13 @@ CONTACT
     padding: 5px 10px;
     font-size: 1rem;
     border-radius: 10px;
-    color: var(--border);
+    color: #CBF3F0;
     margin: 10px 0;
     height: 40px;
+}
+
+.form input:active, .form textarea:active{
+    outline: none;
 }
 
 .form textarea {
