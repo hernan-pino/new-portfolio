@@ -390,6 +390,23 @@ CONTACT
 
 /* 
 
+
+FOOTER
+
+
+*/
+
+footer {
+    height: 2rem;
+    text-align: center;
+    color: #97d8c43c;
+    font-size: .9rem;
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+}
+
+/* 
+
 LINKS PROFILES
 
 */
@@ -448,33 +465,35 @@ LINKS PROFILES
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 
-
-FOOTER
+SCROLL UP
 
 
 */
 
-footer {
-    height: 2rem;
+.scroll-up {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: #97D8C4;
+    bottom: 10% ;
+    right: 3%;
     text-align: center;
-    color: #97d8c43c;
-    font-size: .9rem;
-    margin-top: 5rem;
-    margin-bottom: .5rem;
+    opacity: .7;
+    transform: translateY(200px);
+    transition: all .5s ease-in-out;
+}
+
+.scroll-up a {
+    font-size: 1.5rem;
+    color: #003554;
+}
+
+.scroll-up:hover {
+    opacity: 1;
+}
+
+.show-scroll {
+    transform: translateY(0);
 }
