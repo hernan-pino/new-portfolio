@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Space Grotesk', 'sans-serif';
     /* display: flex;
@@ -199,6 +203,7 @@ ABOUT ME
 */
 .about-me {
     height: auto;
+    margin-bottom: 3rem;
 
 }
 
@@ -253,7 +258,9 @@ p strong {
 }
 
 @media (max-width: 500px){
-    
+    h2 {
+        margin-bottom: 50px;
+    }
 
     .info-container img {
         height: 200px;
@@ -272,7 +279,7 @@ p strong {
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-top: 2.5rem;
+    margin: 2.5rem 0;
     
 }
 
@@ -281,6 +288,103 @@ p strong {
     margin: 0 8px;
 }
 
+
+
+/* 
+
+CONTACT
+
+
+*/
+
+.contact{
+    margin-top: 100px;
+}
+.contact .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call2act h3{
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.call2act p{
+    text-align: left;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 2.5px solid #CBF3F0;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: var(--border);
+    margin: 10px 0;
+    height: 40px;
+}
+
+.form textarea {
+    height: 100px;
+}
+
+.form input[type='submit']{
+    width: 30%;
+    cursor: pointer;
+    margin: 10px auto;
+    color: #97D8C4;
+ }
+
+ .form .btn:hover {
+    background-color: #97D8C4;
+    color: #003554;
+ }
+
+ @media (max-width: 1100px){
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .call2act{
+        margin-bottom: 2.5rem;
+    }
+    .form{
+        width: 60%;
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width: 620px){
+    .call2act{
+        width: 80%;
+    }
+    .call2act h3{
+        
+        font-size: 18px;
+    }
+
+    .form{
+        width: 80%;
+        
+    }
+}
 
 
 
